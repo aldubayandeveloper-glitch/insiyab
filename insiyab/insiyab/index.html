@@ -1,0 +1,3429 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6P2CM4PPHQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6P2CM4PPHQ');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>انسياب الأعمال — وكلاء ذكاء اصطناعي وأتمتة للأعمال السعودية</title>
+<meta name="description" content="نُصمّم ونبني وكلاء ذكاء اصطناعي يعملون 24/7 لخدمة عملائك، إدارة طلباتك، وأتمتة عملياتك اليومية.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* انسياب الأعمال - Light Premium Theme */
+
+:root {
+  /* Backgrounds */
+  --bg: #ffffff;
+  --bg-soft: #faf8f3;
+  --bg-section: #fbfaf6;
+  --bg-card: #ffffff;
+  --bg-dark: #0f1729;
+
+  /* Lines */
+  --line: #ece6d8;
+  --line-soft: rgba(15, 23, 41, 0.06);
+  --line-strong: #d9d2c0;
+
+  /* Ink (text) */
+  --ink: #0f1729;
+  --ink-soft: #4a5570;
+  --ink-muted: #7a8499;
+  --ink-faint: #adb4c4;
+  --ink-inverse: #fefcf7;
+
+  /* Brand colors */
+  --gold: #c89548;
+  --gold-bright: #e8b048;
+  --gold-dark: #a87a30;
+  --gold-soft: #f5ead0;
+  --coral: #f43f5e;
+  --coral-soft: #fde2e7;
+  --violet: #7c3aed;
+  --violet-soft: #ede4fc;
+  --mint: #14b8a6;
+  --mint-soft: #d4f4ef;
+  --navy: #0f1729;
+
+  /* Gradients */
+  --grad-warm: linear-gradient(135deg, #c89548 0%, #f43f5e 100%);
+  --grad-cool: linear-gradient(135deg, #14b8a6 0%, #7c3aed 100%);
+  --grad-primary: linear-gradient(135deg, #c89548 0%, #f43f5e 50%, #7c3aed 100%);
+  --grad-soft: linear-gradient(135deg, rgba(200, 149, 72, 0.08), rgba(124, 58, 237, 0.06));
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 41, 0.05), 0 1px 2px rgba(15, 23, 41, 0.04);
+  --shadow-md: 0 8px 24px -8px rgba(15, 23, 41, 0.12), 0 2px 6px rgba(15, 23, 41, 0.04);
+  --shadow-lg: 0 24px 50px -16px rgba(15, 23, 41, 0.15), 0 6px 14px rgba(15, 23, 41, 0.06);
+  --shadow-xl: 0 32px 80px -20px rgba(15, 23, 41, 0.2), 0 10px 20px rgba(15, 23, 41, 0.08);
+  --shadow-gold: 0 12px 32px -8px rgba(200, 149, 72, 0.4);
+
+  /* Fonts */
+  --font-display: 'IBM Plex Sans Arabic', sans-serif;
+  --font-body: 'IBM Plex Sans Arabic', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --max-width: 1280px;
+  --radius: 18px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle ambient gradient */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 0%, rgba(200, 149, 72, 0.06), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 0% 80%, rgba(124, 58, 237, 0.04), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Navigation */
+nav {
+  position: fixed; top: 0; right: 0; left: 0; z-index: 100;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid var(--line-soft);
+}
+.nav-inner {
+  max-width: var(--max-width); margin: 0 auto; padding: 14px 32px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+.brand-mark { width: 42px; height: 42px; }
+.brand-mark svg { width: 100%; height: 100%; }
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem; font-weight: 700;
+  letter-spacing: -0.01em; line-height: 1;
+}
+.brand-name span {
+  background: var(--grad-warm);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+.nav-links { display: flex; gap: 32px; align-items: center; list-style: none; }
+.nav-links a {
+  color: var(--ink-soft); text-decoration: none;
+  font-size: 0.94rem; font-weight: 500;
+  transition: color 0.2s; position: relative;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--ink); }
+.nav-links a.active::after {
+  content: ''; position: absolute; bottom: -7px;
+  right: 0; left: 0; height: 2px;
+  background: var(--grad-warm); border-radius: 2px;
+}
+.nav-cta {
+  background: var(--navy);
+  color: white !important;
+  padding: 10px 22px; border-radius: 999px;
+  font-weight: 600; font-size: 0.9rem;
+  transition: all 0.25s;
+  box-shadow: var(--shadow-md);
+}
+.nav-cta:hover {
+  background: var(--grad-warm);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+.nav-cta::after { display: none !important; }
+.menu-toggle { display: none; background: none; border: none; color: var(--ink); cursor: pointer; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 16px 28px; border-radius: 12px;
+  font-weight: 600; font-size: 1rem;
+  text-decoration: none; transition: all 0.25s;
+  cursor: pointer; border: none; font-family: inherit;
+  position: relative; overflow: hidden;
+}
+.btn-primary {
+  background: var(--navy);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+.btn-primary::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--grad-warm);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 0;
+}
+.btn-primary > * { position: relative; z-index: 1; }
+.btn-primary:hover::before { opacity: 1; }
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+.btn-gold {
+  background: var(--grad-warm);
+  color: white;
+  box-shadow: var(--shadow-gold);
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px -10px rgba(200, 149, 72, 0.5);
+}
+.btn-ghost {
+  background: white;
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+}
+.btn-ghost:hover {
+  border-color: var(--gold);
+  background: var(--gold-soft);
+  transform: translateY(-2px);
+}
+.btn svg { transition: transform 0.2s; }
+.btn:hover svg { transform: translateX(-3px); }
+
+/* Sections */
+section { padding: 100px 0; position: relative; }
+
+.section-head { margin-bottom: 60px; max-width: 760px; }
+.section-head.center { text-align: center; margin-right: auto; margin-left: auto; }
+.section-eyebrow {
+  font-family: var(--font-mono); font-size: 0.78rem;
+  color: var(--gold-dark);
+  text-transform: uppercase; letter-spacing: 0.12em;
+  margin-bottom: 18px;
+  display: flex; align-items: center; gap: 12px;
+  font-weight: 600;
+}
+.section-head.center .section-eyebrow { justify-content: center; }
+.section-eyebrow::before {
+  content: ''; width: 28px; height: 1.5px;
+  background: var(--grad-warm); border-radius: 2px;
+}
+h2.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700; letter-spacing: -0.02em;
+  line-height: 1.2; margin-bottom: 20px;
+  color: var(--ink);
+}
+h2.section-title .light { color: var(--ink-muted); font-weight: 400; }
+h2.section-title .gradient {
+  background: var(--grad-primary);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-desc {
+  font-size: 1.08rem; color: var(--ink-soft); line-height: 1.75;
+}
+
+/* Footer */
+footer {
+  background: var(--bg-dark);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 70px 0 32px;
+  position: relative; z-index: 2;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 48px; margin-bottom: 48px;
+}
+.footer-brand-block .brand { color: white; }
+.footer-brand-block .brand-name { color: white; }
+.footer-brand-block p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 16px; line-height: 1.7;
+  font-size: 0.94rem; max-width: 320px;
+}
+.footer-col h4 {
+  font-family: var(--font-display);
+  font-size: 0.94rem; color: white;
+  margin-bottom: 20px; font-weight: 700;
+}
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 12px; }
+.footer-col a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  font-size: 0.91rem; transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--gold-bright); }
+.footer-bottom {
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.85rem; color: rgba(255, 255, 255, 0.45);
+  flex-wrap: wrap; gap: 16px;
+}
+.socials { display: flex; gap: 12px; }
+.socials a {
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid; place-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.02);
+}
+.socials a:hover {
+  border-color: var(--gold-bright);
+  color: var(--gold-bright);
+  transform: translateY(-2px);
+}
+.socials svg { width: 16px; height: 16px; }
+
+/* Reveal animations */
+.reveal {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal-scale {
+  opacity: 0; transform: scale(0.94);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-scale.in { opacity: 1; transform: scale(1); }
+
+/* Page hero (inner pages) */
+.page-hero { padding: 140px 0 60px; position: relative; }
+.page-hero::after {
+  content: ''; position: absolute;
+  bottom: 0; right: 10%; left: 10%;
+  height: 1px;
+  background: linear-gradient(to left, transparent, var(--gold), var(--violet), transparent);
+  opacity: 0.3;
+}
+.page-hero .breadcrumb {
+  font-family: var(--font-mono); font-size: 0.8rem;
+  color: var(--gold-dark);
+  text-transform: uppercase; letter-spacing: 0.1em;
+  margin-bottom: 20px; font-weight: 600;
+}
+.page-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 700; letter-spacing: -0.025em;
+  line-height: 1.15; margin-bottom: 20px; max-width: 920px;
+  color: var(--ink);
+}
+.page-hero h1 .accent {
+  background: var(--grad-primary);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.page-hero .subtitle {
+  font-size: 1.18rem; color: var(--ink-soft);
+  max-width: 760px; line-height: 1.7;
+}
+
+/* WhatsApp floating */
+.wa-float {
+  position: fixed; bottom: 24px; left: 24px; z-index: 90;
+  width: 58px; height: 58px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  border-radius: 50%; display: grid; place-items: center;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+  text-decoration: none; color: white;
+  transition: transform 0.3s;
+  animation: wa-pulse 2.5s ease-in-out infinite;
+}
+.wa-float:hover { transform: scale(1.1) rotate(-5deg); }
+.wa-float svg { width: 28px; height: 28px; }
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  50% { box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4), 0 0 0 18px rgba(37, 211, 102, 0); }
+}
+
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 720px) {
+  .container { padding: 0 20px; }
+  nav .nav-links { display: none; }
+  nav .menu-toggle { display: block; }
+  .nav-cta { display: none; }
+  section { padding: 70px 0; }
+  .page-hero { padding: 110px 0 40px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .wa-float { bottom: 16px; left: 16px; width: 52px; height: 52px; }
+  .wa-float svg { width: 26px; height: 26px; }
+}
+
+  nav .nav-links.nav-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    max-width: 300px;
+    height: 100vh;
+    background: var(--bg, #ffffff);
+    box-shadow: -4px 0 24px rgba(0,0,0,0.12);
+    padding: 80px 28px 40px;
+    gap: 8px;
+    z-index: 9999;
+    overflow-y: auto;
+  }
+  nav .nav-links.nav-open a {
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    display: block;
+  }
+  nav .nav-links.nav-open .nav-cta {
+    display: block !important;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+/* ===== INTERACTIVE EFFECTS ===== */
+
+/* جسيمات عائمة في الخلفية */
+.particles-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  animation: floatParticle linear infinite;
+}
+
+@keyframes floatParticle {
+  0%   { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.15; }
+  90%  { opacity: 0.15; }
+  100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
+}
+
+/* cursor glow */
+.cursor-glow {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,149,72,0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+}
+
+/* بطاقات الخدمات تتحرك عند hover */
+.tool-badge {
+  transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.3s ease;
+  cursor: default;
+}
+.tool-badge:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+  z-index: 2;
+  position: relative;
+}
+
+/* Hero counter animation */
+.stat-num {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.stat-card:hover .stat-num {
+  transform: scale(1.15);
+  color: var(--gold);
+}
+
+/* مؤثر الموجة عند scroll */
+.wave-divider {
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: -2px;
+}
+.wave-divider svg {
+  display: block;
+  width: 100%;
+}
+
+/* بطاقة المقارنة pulse */
+@keyframes savingsPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(200,149,72,0.3); }
+  50%       { box-shadow: 0 0 0 14px rgba(200,149,72,0); }
+}
+.saving-row {
+  animation: savingsPulse 2.5s ease-in-out infinite;
+  border-radius: 12px;
+}
+
+/* نقاط الأدوات تنبض */
+@keyframes toolPing {
+  0%   { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+.tool-badge::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0;
+  animation: toolPing 2s ease-out infinite;
+}
+
+/* تأثير كتابة cursor في Hero */
+.rotator-wrap::after {
+  content: '|';
+  color: var(--gold);
+  animation: blink 0.8s step-end infinite;
+  font-weight: 300;
+  margin-right: 2px;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* FAQ hover */
+.faq-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.faq-item:hover {
+  transform: translateX(-4px);
+  box-shadow: 4px 0 0 var(--gold) inset;
+}
+
+/* زر CTA نبضة */
+@keyframes ctaPulse {
+  0%,100% { box-shadow: 0 4px 24px rgba(200,149,72,0.25); }
+  50%      { box-shadow: 0 4px 40px rgba(200,149,72,0.5); }
+}
+.hero-actions .btn-primary {
+  animation: ctaPulse 2s ease-in-out infinite;
+}
+
+/* scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.5;
+  animation: bounce 2s ease-in-out infinite;
+  cursor: pointer;
+}
+.scroll-indicator span {
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+}
+@keyframes bounce {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(8px); }
+}
+
+/* counter up animation */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.stat-card.in .stat-num {
+  animation: countUp 0.6s ease forwards;
+}
+
+
+
+/* ===== AI ROBOT MASCOT ===== */
+.ai-robot {
+  position: fixed;
+  cursor: pointer;
+  bottom: 100px;
+  left: 24px;
+  width: 110px;
+  height: 130px;
+  z-index: 9990;
+  transition: transform 0.15s ease-out, filter 0.3s ease;
+  filter: drop-shadow(0 12px 28px rgba(15,23,41,0.22));
+  will-change: transform;
+}
+/* حركة الطفو الأساسيّة تُضاف عبر JS */
+@keyframes robotFloat {
+  0%,100% { transform: translateY(var(--ry,0px)) rotate(var(--rr,-2deg)) scaleX(var(--rs,1)); }
+  50%     { transform: translateY(calc(var(--ry,0px) - 10px)) rotate(var(--rr,2deg)) scaleX(var(--rs,1)); }
+}
+.ai-robot.floating {
+  animation: robotFloat 4s ease-in-out infinite;
+}
+
+/* الذراع الملوّحة */
+.robot-arm-wave {
+  transform-origin: 38px 78px;
+  animation: robotWave 2.4s ease-in-out infinite;
+}
+@keyframes robotWave {
+  0%,100% { transform: rotate(0deg); }
+  15%     { transform: rotate(-22deg); }
+  30%     { transform: rotate(8deg); }
+  45%     { transform: rotate(-22deg); }
+  60%     { transform: rotate(0deg); }
+}
+
+/* العيون ترمش */
+.robot-eye {
+  transform-origin: center;
+  animation: robotBlink 4s ease-in-out infinite;
+}
+@keyframes robotBlink {
+  0%,42%,48%,100% { transform: scaleY(1); }
+  45%             { transform: scaleY(0.1); }
+}
+
+/* الهوائي ينبض */
+.robot-antenna-dot {
+  animation: antennaPulse 1.8s ease-in-out infinite;
+}
+@keyframes antennaPulse {
+  0%,100% { opacity: 1; r: 4; }
+  50%     { opacity: 0.5; r: 6; }
+}
+
+/* فقاعة المحادثة */
+.robot-bubble {
+  position: fixed;
+  bottom: 190px;
+  left: 136px;
+  background: #fff;
+  border: 2px solid var(--gold, #c89548);
+  border-radius: 16px 16px 16px 4px;
+  padding: 10px 16px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0f1729;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(15,23,41,0.15);
+  z-index: 9992;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+.robot-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: 12px;
+  left: -8px;
+  border: 7px solid transparent;
+  border-right-color: var(--gold, #c89548);
+}
+.robot-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 13px;
+  left: -6px;
+  border: 6px solid transparent;
+  border-right-color: #fff;
+}
+/* bubble controlled by JS */
+
+/* فقاعات صغيرة تطفو */
+.robot-spark {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--gold, #c89548);
+  opacity: 0;
+  animation: sparkRise 3s ease-in-out infinite;
+}
+@keyframes sparkRise {
+  0%   { opacity: 0; transform: translateY(0) scale(0.5); }
+  30%  { opacity: 0.7; }
+  100% { opacity: 0; transform: translateY(-40px) scale(1.2); }
+}
+
+@media (max-width: 720px) {
+  .ai-robot { width: 82px; height: 96px; bottom: 90px; left: 12px; }
+  .robot-bubble { font-size: 0.68rem; left: 100px; bottom: 180px; padding: 6px 10px; }
+}
+
+
+
+/* ===== CHAT WIDGET ===== */
+.chat-window {
+  position: fixed;
+  bottom: 90px;
+  left: 24px;
+  width: 360px;
+  max-width: calc(100vw - 48px);
+  height: 520px;
+  max-height: calc(100vh - 140px);
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(15,23,41,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9998;
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(.34,1.4,.64,1);
+}
+.chat-window.open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+.chat-header {
+  background: linear-gradient(135deg, #1e2a4a 0%, #0f1729 100%);
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.chat-header-avatar {
+  width: 40px; height: 40px;
+  background: linear-gradient(135deg,#c89548,#f43f5e);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.chat-header-info { flex: 1; }
+.chat-header-info h4 { color: #fff; font-size: 0.95rem; margin: 0; }
+.chat-header-info span { color: #14b8a6; font-size: 0.72rem; display: flex; align-items: center; gap: 5px; }
+.chat-header-info span::before {
+  content: ''; width: 7px; height: 7px; border-radius: 50%;
+  background: #14b8a6; display: inline-block;
+  animation: onlinePulse 2s ease-in-out infinite;
+}
+@keyframes onlinePulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+.chat-close {
+  background: rgba(255,255,255,0.12);
+  border: none; color: #fff;
+  width: 30px; height: 30px; border-radius: 8px;
+  cursor: pointer; font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.chat-close:hover { background: rgba(255,255,255,0.22); }
+
+.chat-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px;
+  background: #faf8f3;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.chat-msg {
+  max-width: 82%;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  border-radius: 14px;
+  animation: msgIn 0.3s ease;
+}
+@keyframes msgIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+.chat-msg.bot {
+  background: #fff;
+  color: #0f1729;
+  align-self: flex-start;
+  border-radius: 14px 14px 14px 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.chat-msg.user {
+  background: linear-gradient(135deg,#c89548,#f43f5e);
+  color: #fff;
+  align-self: flex-end;
+  border-radius: 14px 14px 4px 14px;
+}
+.chat-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: flex-start;
+  width: 100%;
+}
+.chat-option {
+  background: #fff;
+  border: 1.5px solid #f5ead0;
+  color: #0f1729;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: right;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+.chat-option:hover {
+  border-color: #c89548;
+  background: #f5ead0;
+  transform: translateX(-3px);
+}
+.chat-typing {
+  align-self: flex-start;
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 14px 14px 14px 4px;
+  display: flex; gap: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.chat-typing span {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #c89548;
+  animation: typingDot 1.4s ease-in-out infinite;
+}
+.chat-typing span:nth-child(2) { animation-delay: 0.2s; }
+.chat-typing span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes typingDot {
+  0%,60%,100% { transform: translateY(0); opacity: 0.4; }
+  30%          { transform: translateY(-6px); opacity: 1; }
+}
+.chat-footer {
+  padding: 10px 14px;
+  background: #fff;
+  border-top: 1px solid #f0ede5;
+  text-align: center;
+  flex-shrink: 0;
+}
+.chat-footer a {
+  color: #c89548;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.chat-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff !important;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+@media (max-width: 720px) {
+  .chat-window {
+    left: 12px; right: 12px;
+    width: auto;
+    bottom: 80px;
+    height: 70vh;
+  }
+}
+
+
+
+.chat-back-btn {
+  background: none;
+  border: 1.5px solid #e8e4dc;
+  color: var(--ink-muted, #7a8499);
+  padding: 7px 14px;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  margin-bottom: 4px;
+  transition: all 0.2s ease;
+}
+.chat-back-btn:hover {
+  border-color: #c89548;
+  color: #c89548;
+}
+
+
+/* نبضة انتباه على الروبوت */
+@keyframes attentionPulse {
+  0%,100% { filter: drop-shadow(0 12px 24px rgba(15,23,41,0.18)); }
+  50%      { filter: drop-shadow(0 8px 32px rgba(200,149,72,0.55)) drop-shadow(0 0 20px rgba(244,63,94,0.3)); }
+}
+.ai-robot:not(.jumping) {
+  filter: drop-shadow(0 12px 28px rgba(15,23,41,0.22)), drop-shadow(0 0 0px rgba(200,149,72,0));
+  animation: attentionGlow 3s ease-in-out infinite;
+}
+@keyframes attentionGlow {
+  0%,100% { filter: drop-shadow(0 12px 28px rgba(15,23,41,0.22)); }
+  50%      { filter: drop-shadow(0 12px 28px rgba(15,23,41,0.18)) drop-shadow(0 0 22px rgba(200,149,72,0.45)); }
+}
+/* شارة "اضغطني" تظهر وتختفي */
+.robot-click-hint {
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg,#c89548,#f43f5e);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+  animation: hintBounce 2s ease-in-out infinite;
+  pointer-events: none;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  box-shadow: 0 3px 10px rgba(200,149,72,0.35);
+}
+.robot-click-hint::before {
+  content: '';
+  position: absolute;
+  top: -5px; left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-bottom-color: #c89548;
+}
+@keyframes hintBounce {
+  0%,100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+  50%      { transform: translateX(-50%) translateY(-4px); opacity: 0.85; }
+}
+
+
+/* ===== مؤشّر تقدّم القراءة ===== */
+.reading-progress {
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  height: 3px;
+  background: transparent;
+  z-index: 99999;
+  pointer-events: none;
+}
+.reading-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #c89548, #f43f5e, #7c3aed);
+  transition: width 0.1s linear;
+  border-radius: 0 2px 2px 0;
+}
+
+/* ===== أنيميشن الأرقام ===== */
+.count-up {
+  display: inline-block;
+}
+
+/* ===== حاسبة العائد ===== */
+.roi-section {
+  background: linear-gradient(135deg, #0f1729 0%, #1e2a4a 100%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+.roi-section::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -20%;
+  width: 60%; height: 200%;
+  background: radial-gradient(ellipse, rgba(200,149,72,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.roi-section::after {
+  content: '';
+  position: absolute;
+  bottom: -50%; right: -20%;
+  width: 60%; height: 200%;
+  background: radial-gradient(ellipse, rgba(124,58,237,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.roi-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.roi-header .section-eyebrow { color: var(--gold); }
+.roi-header h2 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.4rem); margin-top: 12px; }
+.roi-header p { color: rgba(255,255,255,0.6); font-size: 1rem; margin-top: 12px; }
+
+.roi-calculator {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 24px;
+  padding: 40px;
+  backdrop-filter: blur(12px);
+  max-width: 820px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.roi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.roi-inputs h3 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.roi-field {
+  margin-bottom: 20px;
+}
+.roi-field label {
+  display: block;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.82rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.roi-field .field-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.roi-field input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.15);
+  outline: none;
+  cursor: pointer;
+}
+.roi-field input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c89548, #f43f5e);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(200,149,72,0.4);
+}
+.roi-field .field-val {
+  background: rgba(200,149,72,0.15);
+  border: 1px solid rgba(200,149,72,0.3);
+  color: var(--gold);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  min-width: 80px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.roi-results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.roi-results h3 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.roi-result-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 16px 20px;
+  transition: border-color 0.3s;
+}
+.roi-result-card.highlight {
+  background: rgba(200,149,72,0.12);
+  border-color: rgba(200,149,72,0.35);
+}
+.roi-result-label {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.78rem;
+  margin-bottom: 6px;
+}
+.roi-result-val {
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #c89548, #f43f5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+.roi-result-card:not(.highlight) .roi-result-val {
+  background: none;
+  -webkit-text-fill-color: #fff;
+  color: #fff;
+}
+.roi-result-sub {
+  color: rgba(255,255,255,0.4);
+  font-size: 0.72rem;
+  margin-top: 4px;
+}
+.roi-cta {
+  margin-top: 32px;
+  text-align: center;
+}
+.roi-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg,#c89548,#f43f5e);
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.roi-cta a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200,149,72,0.35);
+}
+.roi-disclaimer {
+  text-align: center;
+  color: rgba(255,255,255,0.3);
+  font-size: 0.72rem;
+  margin-top: 20px;
+}
+
+@media(max-width:720px){
+  .roi-grid { grid-template-columns: 1fr; gap: 28px; }
+  .roi-calculator { padding: 24px 18px; }
+}
+
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-section {
+  padding: 100px 0;
+  background: var(--bg-soft);
+  overflow: hidden;
+}
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.testimonials-header h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.testimonials-header p { color: var(--ink-soft); margin-top: 12px; max-width: 480px; margin-inline: auto; }
+
+/* شريط متحرك */
+.marquee-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 16px 0;
+  -webkit-mask: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  mask: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  cursor: grab;
+}
+.marquee-outer:active { cursor: grabbing; }
+.marquee-inner {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  user-select: none;
+}
+.marquee-btn {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1.5px solid var(--line-soft);
+  color: var(--ink);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 12px rgba(15,23,41,0.08);
+}
+.marquee-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: scale(1.08);
+}
+.t-card {
+  background: #fff;
+  border: 1px solid var(--line-soft);
+  border-radius: 20px;
+  padding: 24px;
+  width: 340px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px rgba(15,23,41,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.t-card::before {
+  content: '"';
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.08;
+  font-family: serif;
+}
+.t-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(15,23,41,0.1);
+}
+.t-stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 14px;
+}
+.t-star { color: #f59e0b; font-size: 1rem; }
+.t-text {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+}
+.t-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line-soft);
+}
+.t-avatar {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1rem; color: #fff;
+  flex-shrink: 0;
+}
+.t-name { font-weight: 700; font-size: 0.88rem; color: var(--ink); }
+.t-role { font-size: 0.75rem; color: var(--ink-muted); margin-top: 2px; }
+.t-badge {
+  margin-right: auto;
+  background: var(--gold-soft);
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+/* إجمالي التقييم */
+.testimonials-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+.ts-item { text-align: center; }
+.ts-num {
+  font-size: 2rem;
+  font-weight: 800;
+  background: var(--grad-warm);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ts-label { font-size: 0.8rem; color: var(--ink-muted); margin-top: 4px; }
+.ts-divider { width: 1px; height: 40px; background: var(--line-soft); }
+
+</style>
+
+<style>
+  /* HERO — Interactive */
+  .hero {
+    padding: 150px 0 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(200, 149, 72, 0.08), transparent 70%);
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; left: -150px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.06), transparent 70%);
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1.1fr 0.9fr;
+    gap: 70px; align-items: center;
+    position: relative; z-index: 2;
+  }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 8px 16px;
+    background: white;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    font-family: var(--font-mono); font-size: 0.78rem;
+    color: var(--gold-dark);
+    margin-bottom: 28px;
+    box-shadow: var(--shadow-sm);
+  }
+  .hero-eyebrow::before {
+    content: ''; width: 7px; height: 7px;
+    background: #10b981;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #10b981;
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+
+  h1.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 4.8vw, 4rem);
+    line-height: 1.12; font-weight: 700;
+    letter-spacing: -0.028em; margin-bottom: 28px;
+    color: var(--ink);
+  }
+  h1.hero-title .static-line {
+    display: block;
+  }
+  h1.hero-title .rotator-wrap {
+    display: inline-block;
+    min-height: 1.2em;
+    position: relative;
+    vertical-align: bottom;
+  }
+  h1.hero-title .rotator {
+    background: var(--grad-primary);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    background-size: 200% 200%;
+    animation: gradShift 5s ease infinite;
+    position: relative;
+  }
+  h1.hero-title .rotator::after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1em;
+    background: var(--gold);
+    margin-right: 4px;
+    vertical-align: text-bottom;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  @keyframes gradShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  h1.hero-title .highlight {
+    background: linear-gradient(120deg, transparent 0%, transparent 65%, rgba(200, 149, 72, 0.25) 65%, rgba(200, 149, 72, 0.25) 100%);
+    background-size: 100% 100%;
+    padding: 0 4px;
+  }
+
+  .hero-desc {
+    font-size: 1.12rem; color: var(--ink-soft);
+    margin-bottom: 36px; max-width: 540px; line-height: 1.75;
+  }
+  .cta-row { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+
+  .hero-trust {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line-soft);
+    display: flex; gap: 40px; flex-wrap: wrap;
+  }
+  .trust-stat {
+    display: flex; flex-direction: column;
+  }
+  .trust-num {
+    font-family: var(--font-display);
+    font-size: 1.8rem; font-weight: 700;
+    line-height: 1; color: var(--ink);
+  }
+  .trust-num .accent {
+    background: var(--grad-warm);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .trust-label {
+    font-size: 0.84rem; color: var(--ink-muted);
+    margin-top: 8px;
+  }
+
+  /* Interactive cost comparison visual */
+  .compare-box {
+    position: relative;
+    background: white;
+    border-radius: 24px;
+    box-shadow: var(--shadow-xl);
+    overflow: visible;
+    padding: 32px;
+    border: 1px solid var(--line-soft);
+  }
+  .compare-header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .compare-header h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .compare-header p {
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+  }
+
+  .compare-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    position: relative;
+  }
+  .compare-vs {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.8rem;
+    z-index: 5;
+    box-shadow: 0 0 0 6px white;
+  }
+
+  .compare-card {
+    padding: 22px 18px;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid var(--line-soft);
+    transition: all 0.3s;
+  }
+  .compare-card.human {
+    background: linear-gradient(180deg, #fef2f2, white);
+    border-color: rgba(244, 63, 94, 0.2);
+  }
+  .compare-card.agent {
+    background: linear-gradient(180deg, #f0fdf4, white);
+    border-color: rgba(16, 185, 129, 0.2);
+  }
+  .compare-icon {
+    width: 44px; height: 44px;
+    margin: 0 auto 12px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+  }
+  .compare-card.human .compare-icon {
+    background: rgba(244, 63, 94, 0.1);
+    color: var(--coral);
+  }
+  .compare-card.agent .compare-icon {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+  }
+  .compare-icon svg { width: 22px; height: 22px; }
+  .compare-label {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .compare-value {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+
+  .compare-row {
+    display: flex; justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--line-soft);
+    font-size: 0.88rem;
+  }
+  .compare-row:last-child { border-bottom: none; }
+  .compare-row .row-label { color: var(--ink-muted); }
+  .compare-row .row-h { color: var(--coral); font-weight: 600; }
+  .compare-row .row-a { color: #10b981; font-weight: 600; }
+
+  .compare-savings {
+    margin-top: 18px;
+    padding: 16px;
+    background: var(--grad-warm);
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .compare-savings::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
+    animation: shine 3s ease-in-out infinite;
+  }
+  @keyframes shine {
+    0% { transform: translateX(-100%); }
+    50%, 100% { transform: translateX(100%); }
+  }
+  .savings-label {
+    font-size: 0.82rem;
+    opacity: 0.92;
+    margin-bottom: 4px;
+  }
+  .savings-value {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.35rem;
+  }
+  .live-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: white;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #10b981;
+    display: flex; align-items: center; gap: 6px;
+    box-shadow: var(--shadow-sm);
+  }
+  .live-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: #10b981;
+    border-radius: 50%;
+    animation: pulse-dot 1.5s ease-in-out infinite;
+  }
+
+  /* Tools strip */
+  .tools-strip {
+    padding: 60px 0;
+    background: var(--bg-soft);
+    border-top: 1px solid var(--line-soft);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .tools-label {
+    text-align: center; font-family: var(--font-mono);
+    font-size: 0.76rem; color: var(--ink-muted);
+    margin-bottom: 32px; letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 16px;
+    align-items: center;
+    justify-items: center;
+  }
+  .tool-logo {
+    height: 38px;
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 14px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    color: var(--ink-soft);
+    font-family: var(--font-display);
+    font-weight: 600; font-size: 0.88rem;
+    transition: all 0.3s;
+    box-shadow: var(--shadow-sm);
+  }
+  .tool-logo:hover {
+    color: var(--ink);
+    border-color: var(--gold);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+  .tool-logo svg { height: 20px; width: 20px; flex-shrink: 0; }
+
+  /* PROBLEM */
+  .problem-section {
+    background: var(--bg-section);
+  }
+  .problem-wrap {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 70px; align-items: start;
+  }
+  .problem-list {
+    list-style: none;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .problem-list li {
+    background: white;
+    border: 1px solid var(--line-soft);
+    padding: 18px 22px;
+    border-radius: 12px;
+    display: flex; align-items: center; gap: 14px;
+    font-size: 0.98rem; color: var(--ink);
+    transition: all 0.3s;
+    box-shadow: var(--shadow-sm);
+  }
+  .problem-list li::before {
+    content: '✕'; color: var(--coral);
+    font-weight: 700; font-size: 1rem;
+    width: 26px; height: 26px; border-radius: 50%;
+    background: rgba(244, 63, 94, 0.1);
+    display: grid; place-items: center; flex-shrink: 0;
+  }
+  .problem-list li:hover {
+    transform: translateX(-6px);
+    border-color: rgba(244, 63, 94, 0.2);
+    box-shadow: var(--shadow-md);
+  }
+
+  .loss-card {
+    background: white;
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow-md);
+  }
+  .loss-card h4 {
+    font-family: var(--font-display);
+    font-size: 1.2rem; margin-bottom: 20px;
+    color: var(--coral);
+  }
+  .loss-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .loss-item { text-align: center; padding: 14px 8px; }
+  .loss-item-icon {
+    width: 42px; height: 42px;
+    border-radius: 12px;
+    background: rgba(244, 63, 94, 0.08);
+    color: var(--coral);
+    margin: 0 auto 10px;
+    display: grid; place-items: center;
+  }
+  .loss-item-icon svg { width: 20px; height: 20px; }
+  .loss-item-label { font-size: 0.92rem; font-weight: 600; color: var(--ink); }
+
+  /* THREE PATHS */
+  .paths-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .path-card {
+    background: white;
+    border: 1px solid var(--line-soft);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+  }
+  .path-card::before {
+    content: ''; position: absolute;
+    top: 0; right: 0; left: 0; height: 3px;
+    background: var(--grad-warm);
+    transform: scaleX(0); transform-origin: right;
+    transition: transform 0.5s;
+  }
+  .path-card.featured {
+    border: 1px solid var(--gold);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+  }
+  .path-card.featured::before { transform: scaleX(1); }
+  .path-card:hover {
+    transform: translateY(-12px);
+    border-color: var(--gold);
+    box-shadow: var(--shadow-xl);
+  }
+  .path-card:hover::before { transform: scaleX(1); }
+  .path-icon {
+    width: 64px; height: 64px;
+    margin: 0 auto 22px;
+    background: var(--gold-soft);
+    border: 1px solid rgba(200, 149, 72, 0.3);
+    border-radius: 16px;
+    display: grid; place-items: center;
+    color: var(--gold-dark);
+    transition: transform 0.4s;
+  }
+  .path-card:hover .path-icon { transform: rotate(-5deg) scale(1.1); }
+  .path-icon svg { width: 28px; height: 28px; }
+  .path-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.35rem; font-weight: 700;
+    margin-bottom: 12px; color: var(--ink);
+  }
+  .path-card p {
+    color: var(--ink-soft); line-height: 1.7;
+    margin-bottom: 26px; font-size: 0.96rem;
+  }
+  .path-link {
+    color: var(--gold-dark);
+    text-decoration: none; font-weight: 700;
+    font-size: 0.94rem;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: gap 0.3s;
+  }
+  .path-link:hover { gap: 12px; color: var(--coral); }
+
+  /* WHY AI AGENT */
+  .why-section {
+    background: var(--bg-section);
+  }
+  .why-statement {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+    font-weight: 600; line-height: 1.4;
+    max-width: 880px; margin: 0 auto 24px;
+    text-align: center; color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .why-statement .highlight {
+    background: var(--grad-warm);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+  .why-explainer {
+    text-align: center; color: var(--ink-soft);
+    max-width: 720px; margin: 0 auto 60px;
+    font-size: 1.05rem; line-height: 1.8;
+  }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+  }
+  .why-card {
+    background: white;
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius);
+    padding: 34px 28px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: var(--shadow-sm);
+  }
+  .why-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+    box-shadow: var(--shadow-lg);
+  }
+  .why-num {
+    font-family: var(--font-display); font-size: 2.5rem;
+    font-weight: 700; line-height: 1; margin-bottom: 18px;
+    background: var(--grad-warm);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .why-card h3 {
+    font-family: var(--font-display); font-size: 1.25rem;
+    margin-bottom: 14px; font-weight: 700;
+    color: var(--ink); letter-spacing: -0.01em;
+  }
+  .why-card p {
+    color: var(--ink-soft); line-height: 1.75;
+    font-size: 0.96rem;
+  }
+
+  /* Articles preview */
+  .articles-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  .article-card {
+    background: white;
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none; color: inherit;
+    display: flex; flex-direction: column;
+    box-shadow: var(--shadow-sm);
+  }
+  .article-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+    box-shadow: var(--shadow-lg);
+  }
+  .article-img {
+    aspect-ratio: 16/10; position: relative;
+    overflow: hidden;
+    background: var(--bg-soft);
+  }
+  .article-img svg { width: 100%; height: 100%; display: block; }
+  .article-img .topic {
+    position: absolute; top: 14px; right: 14px;
+    background: white;
+    border: 1px solid var(--line);
+    padding: 5px 13px; border-radius: 999px;
+    font-family: var(--font-mono); font-size: 0.7rem;
+    color: var(--gold-dark); font-weight: 600;
+    box-shadow: var(--shadow-sm);
+  }
+  .article-content {
+    padding: 26px; flex: 1;
+    display: flex; flex-direction: column;
+  }
+  .article-content h3 {
+    font-family: var(--font-display); font-size: 1.15rem;
+    font-weight: 700; margin-bottom: 10px; line-height: 1.45;
+    color: var(--ink);
+  }
+  .article-content p {
+    color: var(--ink-soft); font-size: 0.92rem;
+    line-height: 1.65; margin-bottom: 18px; flex: 1;
+  }
+  .article-meta {
+    display: flex; justify-content: space-between;
+    border-top: 1px solid var(--line-soft);
+    padding-top: 14px; font-size: 0.8rem; color: var(--ink-muted);
+  }
+  .article-meta .read-link { color: var(--gold-dark); font-weight: 600; }
+
+  /* FAQ */
+  .faq-list { max-width: 880px; margin: 0 auto; }
+  .faq-item {
+    border-bottom: 1px solid var(--line-soft);
+    padding: 24px 0;
+  }
+  .faq-q {
+    width: 100%; background: none; border: none;
+    color: var(--ink); font-family: var(--font-display);
+    font-size: 1.08rem; font-weight: 600;
+    text-align: right; cursor: pointer;
+    display: flex; justify-content: space-between;
+    align-items: center; gap: 24px; padding: 0;
+    transition: color 0.2s;
+  }
+  .faq-q:hover { color: var(--gold-dark); }
+  .faq-q .icon {
+    width: 32px; height: 32px; border-radius: 50%;
+    border: 1px solid var(--line);
+    background: white;
+    display: grid; place-items: center;
+    color: var(--gold-dark);
+    transition: transform 0.3s, background 0.3s;
+    flex-shrink: 0;
+  }
+  .faq-item.open .faq-q .icon {
+    background: var(--grad-warm);
+    color: white;
+    transform: rotate(45deg);
+    border-color: transparent;
+  }
+  .faq-a { max-height: 0; overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+  .faq-item.open .faq-a { max-height: 400px; }
+  .faq-a-inner {
+    padding-top: 16px; color: var(--ink-soft);
+    line-height: 1.75; font-size: 0.96rem;
+  }
+
+  /* Final CTA / Newsletter */
+  .final-cta { padding: 60px 0 100px; }
+  .final-box {
+    background: var(--ink);
+    color: white;
+    border-radius: 32px;
+    padding: 70px 50px;
+    text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .final-box::before {
+    content: ''; position: absolute;
+    top: -50%; right: -10%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(200, 149, 72, 0.2), transparent 70%);
+    border-radius: 50%; filter: blur(40px);
+    animation: float-bg 15s ease-in-out infinite;
+  }
+  .final-box::after {
+    content: ''; position: absolute;
+    bottom: -50%; left: -10%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.15), transparent 70%);
+    border-radius: 50%; filter: blur(40px);
+    animation: float-bg 15s ease-in-out infinite reverse;
+  }
+  @keyframes float-bg {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(30px, -30px); }
+  }
+  .final-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700; margin-bottom: 14px;
+    letter-spacing: -0.02em;
+    position: relative; z-index: 1;
+    color: white;
+  }
+  .final-desc {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.08rem; margin-bottom: 36px;
+    max-width: 580px; margin-right: auto; margin-left: auto;
+    position: relative; z-index: 1;
+  }
+  .newsletter-form {
+    display: flex; gap: 12px;
+    max-width: 500px; margin: 0 auto;
+    flex-wrap: wrap; justify-content: center;
+    position: relative; z-index: 1;
+  }
+  .newsletter-form input {
+    flex: 1; min-width: 240px;
+    padding: 16px 22px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    color: white; font-family: inherit;
+    font-size: 0.95rem;
+  }
+  .newsletter-form input::placeholder { color: rgba(255, 255, 255, 0.5); }
+  .newsletter-form input:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 0 3px rgba(200, 149, 72, 0.15);
+  }
+  .newsletter-form button {
+    background: var(--grad-warm);
+    color: white;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 14px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    box-shadow: var(--shadow-gold);
+  }
+  .newsletter-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px -8px rgba(200, 149, 72, 0.5);
+  }
+  .newsletter-note {
+    font-size: 0.84rem; color: rgba(255, 255, 255, 0.5);
+    margin-top: 18px; position: relative; z-index: 1;
+  }
+
+  @media (max-width: 1024px) {
+    .hero-grid, .problem-wrap { grid-template-columns: 1fr; gap: 60px; }
+    .paths-grid, .why-grid, .articles-grid { grid-template-columns: 1fr; }
+    .path-card.featured { transform: none; }
+    .path-card.featured:hover { transform: translateY(-12px); }
+    .tools-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+  @media (max-width: 720px) {
+    .hero { padding: 130px 0 60px; }
+    .hero-trust { gap: 24px; }
+    .loss-grid { grid-template-columns: 1fr; }
+    .final-box { padding: 50px 28px; }
+    .tools-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  nav .nav-links.nav-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    max-width: 300px;
+    height: 100vh;
+    background: var(--bg, #ffffff);
+    box-shadow: -4px 0 24px rgba(0,0,0,0.12);
+    padding: 80px 28px 40px;
+    gap: 8px;
+    z-index: 9999;
+    overflow-y: auto;
+  }
+  nav .nav-links.nav-open a {
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    display: block;
+  }
+  nav .nav-links.nav-open .nav-cta {
+    display: block !important;
+    margin-top: 16px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="reading-progress" id="readingProgress">
+  <div class="reading-progress-bar" id="readingBar"></div>
+</div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="robot-bubble" id="robotBubble">اضغط وابدأ المحادثة! 👋</div>
+
+<!-- AI ROBOT MASCOT -->
+          <div class="ai-robot" id="aiRobot" title="مرحبًا! أنا وكيلك الذكي" style="cursor:pointer">
+            <span class="robot-spark" style="width:6px;height:6px;left:20px;bottom:30px;animation-delay:0s;"></span>
+            <span class="robot-spark" style="width:8px;height:8px;left:90px;bottom:40px;animation-delay:1s;"></span>
+            <span class="robot-spark" style="width:5px;height:5px;left:55px;bottom:20px;animation-delay:2s;"></span>
+            <svg viewBox="0 0 130 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="robotBody" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#1e2a4a"/>
+                  <stop offset="1" stop-color="#0f1729"/>
+                </linearGradient>
+                <linearGradient id="robotFace" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#c89548"/>
+                  <stop offset="1" stop-color="#f43f5e"/>
+                </linearGradient>
+              </defs>
+
+              <!-- الهوائي -->
+              <line x1="65" y1="20" x2="65" y2="34" stroke="#c89548" stroke-width="3" stroke-linecap="round"/>
+              <circle class="robot-antenna-dot" cx="65" cy="16" r="5" fill="#f43f5e"/>
+
+              <!-- الرأس -->
+              <rect x="32" y="32" width="66" height="56" rx="20" fill="url(#robotBody)"/>
+
+              <!-- شاشة الوجه -->
+              <rect x="40" y="42" width="50" height="36" rx="12" fill="#0a0f1c"/>
+
+              <!-- العيون -->
+              <circle class="robot-eye" cx="54" cy="60" r="6" fill="url(#robotFace)"/>
+              <circle class="robot-eye" cx="76" cy="60" r="6" fill="url(#robotFace)" style="animation-delay:0.05s;"/>
+
+              <!-- ابتسامة -->
+              <path d="M52 70 Q65 78 78 70" stroke="#c89548" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+              <!-- الجسم -->
+              <rect x="40" y="92" width="50" height="42" rx="14" fill="url(#robotBody)"/>
+              <circle cx="65" cy="108" r="7" fill="url(#robotFace)" opacity="0.9"/>
+              <rect x="56" y="120" width="18" height="4" rx="2" fill="#c89548" opacity="0.5"/>
+
+              <!-- الذراع اليمنى (ثابتة) -->
+              <rect x="26" y="98" width="10" height="26" rx="5" fill="url(#robotBody)"/>
+
+              <!-- الذراع اليسرى (تلوّح) -->
+              <g class="robot-arm-wave">
+                <rect x="94" y="74" width="10" height="26" rx="5" fill="url(#robotBody)"/>
+                <circle cx="99" cy="72" r="7" fill="url(#robotFace)"/>
+              </g>
+
+              <!-- القدمان -->
+              <rect x="46" y="134" width="14" height="10" rx="5" fill="url(#robotBody)"/>
+              <rect x="70" y="134" width="14" height="10" rx="5" fill="url(#robotBody)"/>
+            </svg>
+          </div>
+<div class="particles-bg" id="particlesBg"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1e2a4a"/>
+              <stop offset="1" stop-color="#0f1729"/>
+            </linearGradient>
+            <linearGradient id="logoLine" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#c89548"/>
+              <stop offset="0.5" stop-color="#f43f5e"/>
+              <stop offset="1" stop-color="#c89548"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="48" height="48" rx="14" fill="url(#logoBg)"/>
+          <rect x="1" y="1" width="46" height="46" rx="13" stroke="rgba(200, 149, 72, 0.2)" stroke-width="0.5" fill="none"/>
+          <path d="M11 30 Q22 14, 24 24 T37 18" stroke="url(#logoLine)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          <path d="M11 34 Q22 20, 24 28 T37 22" stroke="#c89548" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.45"/>
+          <circle cx="11" cy="30" r="2.8" fill="#c89548"/>
+          <circle cx="37" cy="18" r="2.8" fill="#f43f5e"/>
+        </svg>
+      </div>
+      <span class="brand-name">انسياب <span>الأعمال</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">الرئيسية</a></li>
+      <li><a href="services.html">الخدمات</a></li>
+      <li><a href="guide.html">الدليل</a></li>
+      <li><a href="blog.html">المدوّنة</a></li>
+      <li><a href="about.html">من نحن</a></li>
+      <li><a href="contact.html">اتصل بنا</a></li>
+      <li><a href="contact.html" class="nav-cta">اطلب وكيلك الذكي</a></li>
+    </ul>
+    <button class="menu-toggle" aria-label="القائمة">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow">محتوى عربي تطبيقي • من ممارسين في السوق السعودي</div>
+
+        <h1 class="hero-title">
+          <span class="static-line">وظِّف</span>
+          <span class="rotator-wrap"><span class="rotator" id="rotator">موظفًا رقميًا</span></span>
+          <span class="static-line">يعمل بلا توقّف</span>
+          <span class="static-line">بـ<span class="highlight">جزء من راتب واحد</span>.</span>
+        </h1>
+
+        <p class="hero-desc">
+          نُصمّم وكلاء ذكاء اصطناعي يستقبلون العملاء، يردّون على استفساراتهم، يديرون الحجوزات والطلبات، ويوصلون البيانات بين أنظمتك — على مدار الساعة، وبدون إجازات.
+        </p>
+
+        <div class="cta-row">
+          <a href="guide.html" class="btn btn-primary">
+            ابدأ من الدليل التطبيقي
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+          </a>
+          <a href="contact.html" class="btn btn-ghost">اطلب وكيلًا جاهزًا</a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-stat">
+            <div class="trust-num"><span class="accent">24/7</span></div>
+            <div class="trust-label">تشغيل مستمر بلا انقطاع</div>
+          </div>
+          <div class="trust-stat">
+            <div class="trust-num">+<span class="accent">80%</span></div>
+            <div class="trust-label">من الاستفسارات تلقائيًا</div>
+          </div>
+          <div class="trust-stat">
+            <div class="trust-num">+<span class="accent">12</span><span style="color: var(--ink-muted); font-size: 1rem; font-weight: 400;"> سنة</span></div>
+            <div class="trust-label">خبرة ميدانيّة</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-scale">
+        <div class="compare-box">
+          <span class="live-badge">يعمل الآن</span>
+          <div class="compare-header">
+            <h3>المقارنة الحقيقيّة</h3>
+            <p>التكلفة الشهريّة لخدمة عملاء كاملة</p>
+          </div>
+
+          <div class="compare-cards">
+            <div class="compare-vs">VS</div>
+            <div class="compare-card human">
+              <div class="compare-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="compare-label">3 موظفين بشريّين</div>
+              <div class="compare-value" id="humanCost">12,000 ر.س</div>
+            </div>
+            <div class="compare-card agent">
+              <div class="compare-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h.01M15 9h.01M8 14h8"/></svg>
+              </div>
+              <div class="compare-label">وكيل ذكي واحد</div>
+              <div class="compare-value" id="agentCost">≈ 400 ر.س</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 18px; padding: 4px 0;">
+            <div class="compare-row">
+              <span class="row-label">ساعات العمل</span>
+              <span class="row-h">8 ساعات</span>
+              <span class="row-a">24 ساعة</span>
+            </div>
+            <div class="compare-row">
+              <span class="row-label">عطلات وإجازات</span>
+              <span class="row-h">نعم</span>
+              <span class="row-a">لا</span>
+            </div>
+            <div class="compare-row">
+              <span class="row-label">السرعة في الردّ</span>
+              <span class="row-h">دقائق</span>
+              <span class="row-a">ثوانٍ</span>
+            </div>
+            <div class="compare-row">
+              <span class="row-label">يفهم لهجتك</span>
+              <span class="row-h">نعم</span>
+              <span class="row-a">نعم</span>
+            </div>
+          </div>
+
+          <div class="compare-savings">
+            <div class="savings-label">توفير شهري متوقّع</div>
+            <div class="savings-value" id="savings">+11,600 ر.س</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- TOOLS -->
+<section class="tools-strip">
+  <div class="container">
+    <div class="tools-label">نبني بأقوى أدوات الأتمتة والذكاء الاصطناعي</div>
+    <div class="tools-grid">
+      <div class="tool-logo" title="n8n">
+        <svg viewBox="0 0 32 32" fill="none">
+          <circle cx="8" cy="16" r="4" fill="#EA4B71"/>
+          <circle cx="20" cy="9" r="3" fill="#EA4B71" opacity="0.7"/>
+          <circle cx="20" cy="23" r="3" fill="#EA4B71" opacity="0.7"/>
+          <line x1="11" y1="14" x2="18" y2="10" stroke="#EA4B71" stroke-width="1.5"/>
+          <line x1="11" y1="18" x2="18" y2="22" stroke="#EA4B71" stroke-width="1.5"/>
+        </svg>n8n
+      </div>
+      <div class="tool-logo" title="Make">
+        <svg viewBox="0 0 32 32" fill="none">
+          <circle cx="10" cy="16" r="6" fill="#6D00CC"/>
+          <circle cx="22" cy="16" r="6" fill="#A050FF" opacity="0.9"/>
+        </svg>Make
+      </div>
+      <div class="tool-logo" title="Claude">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M16 4 L20 12 L28 16 L20 20 L16 28 L12 20 L4 16 L12 12 Z" fill="#D97757"/>
+        </svg>Claude
+      </div>
+      <div class="tool-logo" title="OpenAI">
+        <svg viewBox="0 0 32 32" fill="none" stroke="#10A37F" stroke-width="2">
+          <circle cx="16" cy="16" r="11"/>
+          <path d="M16 5 L16 27 M5 11 L27 21 M27 11 L5 21" opacity="0.7"/>
+        </svg>OpenAI
+      </div>
+      <div class="tool-logo" title="Power BI">
+        <svg viewBox="0 0 32 32" fill="none">
+          <rect x="6" y="18" width="5" height="10" fill="#F2C811"/>
+          <rect x="14" y="12" width="5" height="16" fill="#F2C811" opacity="0.85"/>
+          <rect x="22" y="6" width="5" height="22" fill="#F2C811" opacity="0.7"/>
+        </svg>Power BI
+      </div>
+      <div class="tool-logo" title="Zapier">
+        <svg viewBox="0 0 32 32" fill="#FF4A00">
+          <path d="M16 6 L18 14 L26 16 L18 18 L16 26 L14 18 L6 16 L14 14 Z"/>
+        </svg>Zapier
+      </div>
+      <div class="tool-logo" title="WhatsApp">
+        <svg viewBox="0 0 32 32" fill="#25D366">
+          <path d="M27 5C24 2 20 .5 16 .5 7.5.5.5 7.4.5 16c0 2.7.7 5.4 2 7.7L.4 31.5l8-2.1c2.2 1.2 4.7 1.9 7.2 1.9 8.5 0 15.5-6.9 15.5-15.5 0-4-1.6-7.9-4.1-10.8zM16 28.7c-2.3 0-4.5-.6-6.4-1.7l-.5-.3-4.7 1.2 1.3-4.6-.3-.5C4.1 21 3.4 18.5 3.4 16 3.4 9 9 3.4 16 3.4c3.4 0 6.6 1.3 8.9 3.7s3.7 5.6 3.7 8.9c0 7-5.6 12.6-12.6 12.6z"/>
+        </svg>WhatsApp
+      </div>
+      <div class="tool-logo" title="Google">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M28 16.3c0-.8-.1-1.6-.2-2.3H16v4.5h6.7c-.3 1.6-1.2 2.9-2.5 3.8v3.2h4.1c2.4-2.2 3.7-5.5 3.7-9.2z" fill="#4285F4"/>
+          <path d="M16 28c3.4 0 6.2-1.1 8.3-3l-4.1-3.2c-1.1.8-2.6 1.2-4.2 1.2-3.2 0-6-2.2-7-5.1H4.8v3.3C7 25.4 11.2 28 16 28z" fill="#34A853"/>
+          <path d="M9 17.9c-.2-.8-.4-1.6-.4-2.4s.1-1.6.4-2.4V9.8H4.8C4 11.4 3.5 13.2 3.5 15.5c0 2.3.5 4.1 1.3 5.7L9 17.9z" fill="#FBBC04"/>
+          <path d="M16 8c1.8 0 3.5.6 4.8 1.9l3.6-3.6C22.2 4.4 19.4 3 16 3 11.2 3 7 5.6 4.8 9.8L9 13c1-2.9 3.8-5 7-5z" fill="#EA4335"/>
+        </svg>Google
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">تحقّق من واقعك</div>
+      <h2 class="section-title">هل فريقك غارق في <span class="light">المهام المتكرّرة كل يوم؟</span></h2>
+      <p class="section-desc">إذا كنت تجيب بنعم على أكثر من ثلاث نقاط، فإن عملك يخسر ساعات يوميًا يمكن استرجاعها فورًا بأتمتة ذكيّة.</p>
+    </div>
+
+    <div class="problem-wrap">
+      <div class="reveal">
+        <ul class="problem-list">
+          <li>نفس الأسئلة من العملاء تتكرّر عشرات المرّات يوميًا</li>
+          <li>ساعات تُستهلك في نقل بيانات بين Excel والبريد والأنظمة</li>
+          <li>عملاء يتواصلون بعد الدوام ويتمّ فقدانهم في الصباح</li>
+          <li>المتابعة اليدويّة للعملاء المحتملين تتعثّر وتتأخّر</li>
+          <li>تقارير الأسبوع تستنزف يوم عمل كامل من فريقك</li>
+          <li>فرز الطلبات الواردة يأكل وقت أفضل موظفيك</li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <div class="loss-card">
+          <h4>والنتيجة؟ خسائر يوميّة بثلاثة وجوه</h4>
+          <div class="loss-grid">
+            <div class="loss-item">
+              <div class="loss-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div class="loss-item-label">وقت يضيع</div>
+            </div>
+            <div class="loss-item">
+              <div class="loss-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+              <div class="loss-item-label">رواتب تتضخّم</div>
+            </div>
+            <div class="loss-item">
+              <div class="loss-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              <div class="loss-item-label">فرص نمو تفوتك</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="section-eyebrow">لماذا الوكيل الذكي؟</div>
+      <p class="why-statement">
+        الأدوات متوفّرة. التحدّي أنّك ما زلت تدفع <span class="highlight">رواتب بشريّة</span> مقابل عمل تنفّذه الآلة بدقّة أعلى وبسرعة لا تنام.
+      </p>
+      <p class="why-explainer">
+        وكيل الذكاء الاصطناعي ليس روبوت محادثة بسيطًا يعطي ردودًا جاهزة. هو موظف رقمي يقرأ السياق، يتّخذ قرارات حسب القواعد التي تحدّدها، يتّصل بأنظمتك، وينفّذ المهامّ كاملة.
+      </p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-num">01</div>
+        <h3>التكلفة تقتل هامش الربح</h3>
+        <p>فريق خدمة عملاء من ثلاثة موظفين يكلّفك ما يزيد على 12 ألف ريال شهريًا. وكيل ذكي واحد يغطّي معظم الاستفسارات بجزء يسير من هذه التكلفة، وبجودة ثابتة لا تتأثّر بمزاج أو إرهاق.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">02</div>
+        <h3>عملاؤك يتواصلون متى ما أرادوا</h3>
+        <p>أكثر من ثلثَي طلبات العملاء المحتملين تصل خارج أوقات الدوام الرسمي. بدون وكيل يستقبلها فورًا، يذهب العميل لأقرب بديل قبل أن يصلك السؤال.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">03</div>
+        <h3>أفضل عقولك تُهدر في الروتين</h3>
+        <p>الردود المتكرّرة وتصنيف الطلبات والمتابعات اليدويّة تأكل وقت الموظفين الذين يجب أن يركّزوا على القرارات الاستراتيجيّة وبناء العلاقات.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATHS -->
+<section>
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="section-eyebrow">اختر مسارك</div>
+      <h2 class="section-title">ثلاث طُرق <span class="light">— حسب وضعك واستعجالك.</span></h2>
+      <p class="section-desc">سواء كنت تتعرّف على الفكرة لأول مرّة، أو تريد بناء الحل بيدك، أو تطلب تسليمًا جاهزًا — لدينا مسار يناسبك.</p>
+    </div>
+
+    <div class="paths-grid">
+      <div class="path-card reveal">
+        <div class="path-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+        <h3>أريد أن أفهم أولًا</h3>
+        <p>ادخل إلى الدليل التطبيقي المُفصّل: ما هو الوكيل الذكي، متى تحتاجه فعلًا، ومتى لا تحتاجه — بأمثلة من السوق السعودي.</p>
+        <a href="guide.html" class="path-link">
+          الدليل التطبيقي
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+        </a>
+      </div>
+
+      <div class="path-card featured reveal">
+        <div class="path-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        </div>
+        <h3>أريد بناءه بنفسي</h3>
+        <p>اقرأ مقالاتنا التعليميّة وحمّل قوالب جاهزة لتبني أوّل وكيل ذكي لك بدون كتابة أيّ سطر برمجي — خطوة بخطوة بالعربية.</p>
+        <a href="blog.html" class="path-link">
+          مقالات تعليميّة
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+        </a>
+      </div>
+
+      <div class="path-card reveal">
+        <div class="path-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        </div>
+        <h3>أريد وكيلًا جاهزًا</h3>
+        <p>نبني لك وكيلًا ذكيًا مخصّصًا لطبيعة عملك، مربوطًا بواتساب أو موقعك أو نظامك الداخلي — جاهزًا للتشغيل خلال أيام قليلة.</p>
+        <a href="contact.html" class="path-link">
+          اطلب وكيلك الآن
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES PREVIEW -->
+<section style="background: var(--bg-section);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">من المدوّنة</div>
+      <h2 class="section-title">أحدث المقالات <span class="light">في الأتمتة والوكلاء الذكيين.</span></h2>
+    </div>
+
+    <div class="articles-grid">
+      <a href="blog.html" class="article-card reveal">
+        <div class="article-img">
+          <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="250" fill="#fbfaf6"/>
+            <defs><linearGradient id="ag1" x1="0" x2="1"><stop offset="0" stop-color="#c89548" stop-opacity="0.3"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0.2"/></linearGradient></defs>
+            <path d="M0,150 Q100,100 200,130 T400,110 L400,250 L0,250 Z" fill="url(#ag1)"/>
+            <circle cx="80" cy="80" r="40" fill="#c89548" opacity="0.25"/>
+            <circle cx="320" cy="160" r="60" fill="#7c3aed" opacity="0.15"/>
+          </svg>
+          <span class="topic">وكيل ذكي</span>
+        </div>
+        <div class="article-content">
+          <h3>الفرق بين Workflow وAgentic AI: متى تحتاج كلًا منهما؟</h3>
+          <p>قرار اختيار البنية الصحيحة يوفّر عليك آلاف الريالات. شرح عملي بأمثلة من واقع التطبيق في مشاريع سعوديّة.</p>
+          <div class="article-meta">
+            <span>8 دقائق قراءة</span>
+            <span class="read-link">اقرأ ←</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="blog.html" class="article-card reveal">
+        <div class="article-img">
+          <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="250" fill="#fbfaf6"/>
+            <g stroke="#c89548" stroke-width="1.5" fill="none" opacity="0.6">
+              <rect x="60" y="80" width="80" height="50" rx="6"/>
+              <rect x="180" y="120" width="80" height="50" rx="6"/>
+              <rect x="280" y="60" width="80" height="50" rx="6"/>
+              <path d="M140,105 L180,145"/>
+              <path d="M260,145 L280,85"/>
+            </g>
+            <circle cx="100" cy="105" r="4" fill="#c89548"/>
+            <circle cx="220" cy="145" r="4" fill="#14b8a6"/>
+            <circle cx="320" cy="85" r="4" fill="#f43f5e"/>
+          </svg>
+          <span class="topic">أتمتة</span>
+        </div>
+        <div class="article-content">
+          <h3>الموظف الرقمي: كيف يحرّر فريقك من 40 ساعة عمل أسبوعيًا؟</h3>
+          <p>تحليل اقتصادي تطبيقي على شركات سعوديّة فعليّة، مع حاسبة العائد على الاستثمار.</p>
+          <div class="article-meta">
+            <span>12 دقيقة قراءة</span>
+            <span class="read-link">اقرأ ←</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="blog.html" class="article-card reveal">
+        <div class="article-img">
+          <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="250" fill="#fbfaf6"/>
+            <g opacity="0.75">
+              <rect x="40" y="180" width="40" height="40" fill="#c89548"/>
+              <rect x="100" y="140" width="40" height="80" fill="#14b8a6"/>
+              <rect x="160" y="100" width="40" height="120" fill="#7c3aed"/>
+              <rect x="220" y="70" width="40" height="150" fill="#f43f5e"/>
+              <rect x="280" y="40" width="40" height="180" fill="#c89548"/>
+            </g>
+          </svg>
+          <span class="topic">دليل اختيار</span>
+        </div>
+        <div class="article-content">
+          <h3>أفضل أدوات بناء الوكلاء الذكيين 2026: n8n أم Make؟</h3>
+          <p>مقارنة موضوعيّة بين الأدوات الأكثر استخدامًا، مع توصيات حسب حجم نشاطك.</p>
+          <div class="article-meta">
+            <span>15 دقيقة قراءة</span>
+            <span class="read-link">اقرأ ←</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div style="text-align: center; margin-top: 48px;" class="reveal">
+      <a href="blog.html" class="btn btn-ghost">جميع المقالات</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="section-eyebrow">أسئلة شائعة</div>
+      <h2 class="section-title">إجابات مباشرة <span class="light">لكلّ ما يدور في ذهنك قبل البدء.</span></h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>ما الذي يجعل الوكيل الذكي مختلفًا عن الشات بوت العادي؟</span>
+          <span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          الشات بوت يعطي ردودًا جاهزة مكتوبة مسبقًا. الوكيل الذكي يفهم نيّة العميل، يتّخذ قرارًا، يستعلم من أنظمتك (المخزون، الحجوزات، الفواتير)، ثم ينفّذ المهمّة كاملة — مثل حجز موعد، إصدار فاتورة، أو تصعيد الحالة لموظف بشري عند الحاجة.
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>كم تستغرق عمليّة بناء وكيل ذكي لعملي؟</span>
+          <span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          وكيل بسيط (مثل الرد على الاستفسارات وحجز المواعيد): من 7 إلى 10 أيّام عمل. وكيل متكامل يتعامل مع عدّة مهامّ ومربوط بأنظمة متعدّدة: من 3 إلى 4 أسابيع.
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>هل يفهم الوكيل اللهجة الخليجيّة؟</span>
+          <span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          نعم. النماذج التي نعتمد عليها (مثل Claude و GPT) تتقن العربية بمختلف لهجاتها بدرجة عالية. كما نُدرّب الوكيل على مصطلحات سوقك وأسلوب التواصل الذي يناسب عملاءك الفعليين.
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>هل بيانات عملائي آمنة؟</span>
+          <span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          نعم. نوفّر خيارًا للاستضافة المحليّة الذاتيّة (Self-hosted) حيث تبقى بياناتك على خوادم تخصّك أنت. نلتزم باتفاقيّة سرّيّة مع كلّ عميل.
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>هل سيحلّ الوكيل محلّ موظفي فريقي؟</span>
+          <span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          لا. الوكيل يحرّر فريقك من المهامّ المتكرّرة المملّة، ليتفرّغوا للمهامّ التي تتطلّب تفكيرًا واتّخاذ قرار وبناء علاقات — ما يرفع جودة عملهم ورضاهم الوظيفي، ويرفع كفاءة عملك في نفس الوقت.
+        </div></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q">
+          <span>من أين أبدأ؟</span>
+          <span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          احجز جلسة تشخيص مجّانيّة مدّتها 30 دقيقة. نستمع لطبيعة عملك، نُحدّد أيّ العمليّات تستحقّ الأتمتة أوّلًا، ونعطيك خطّة عمل واضحة قابلة للتنفيذ.
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA — Connected to Formspree -->
+
+<!-- ROI CALCULATOR -->
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="testimonials-header reveal">
+      <div class="section-eyebrow">⭐ آراء عملائنا</div>
+      <h2>ماذا يقول من جرّبوا الخدمة؟</h2>
+      <p>تجارب حقيقيّة من أصحاب أعمال سعوديّين بنوا وكلاءهم الذكيّة معنا</p>
+    </div>
+  </div>
+
+  <!-- الشريط المتحرك — خارج container لامتداد كامل -->
+  <div class="marquee-outer">
+    <div class="marquee-inner" id="marqueeInner">
+
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">الوكيل الذكي غيّر عيادتنا بالكامل. كنّا نفقد مرضى كثيرين بعد الدوام، الآن يردّ الوكيل فوريًا ويحجز المواعيد تلقائيًا. في الشهر الأول وفّرنا أكثر من 8,000 ريال.</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:linear-gradient(135deg,#c89548,#f43f5e)">م</div>
+            <div><div class="t-name">د. محمد الشمري</div><div class="t-role">مدير عيادة أسنان — الرياض</div></div>
+            <span class="t-badge">عيادة</span>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">كنت أظن الأتمتة معقّدة وتحتاج فريق تقني كامل. عبدالعزيز بنى لنا الوكيل خلال أسبوع وشرح كل خطوة. الآن متجرنا يردّ على العملاء 24 ساعة بدون أي موظف إضافي.</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:linear-gradient(135deg,#7c3aed,#14b8a6)">ف</div>
+            <div><div class="t-name">فيصل العتيبي</div><div class="t-role">صاحب متجر إلكتروني — جدة</div></div>
+            <span class="t-badge">تجارة</span>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">ربطنا نظام الحجوزات مع الواتساب وGoogle Calendar بشكل كامل. صار عندنا صفر مواعيد مفقودة منذ 3 أشهر. النتيجة تفوق ما توقّعناه بكثير.</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:linear-gradient(135deg,#f43f5e,#c89548)">س</div>
+            <div><div class="t-name">سارة القحطاني</div><div class="t-role">مديرة مركز تدريب — الدمام</div></div>
+            <span class="t-badge">تدريب</span>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">الاستشارة المجانية وحدها كانت تستاهل. فهموا احتياجنا بدقة وقدّموا حلاً مخصّصًا لطبيعة عملنا. الفريق محترف جداً والتواصل سريع وواضح.</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:linear-gradient(135deg,#14b8a6,#7c3aed)">خ</div>
+            <div><div class="t-name">خالد الدوسري</div><div class="t-role">مدير مطعم — القصيم</div></div>
+            <span class="t-badge">مطاعم</span>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">كنّا نصرف على موظفَين للردّ على الاستفسارات. الآن وكيل واحد يتولّى 85% من المحادثات، والموظفان صارا يركّزان على مهام أهم وأعلى قيمة.</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:linear-gradient(135deg,#c89548,#7c3aed)">ن</div>
+            <div><div class="t-name">نورة الحربي</div><div class="t-role">مديرة شركة عقارات — الرياض</div></div>
+            <span class="t-badge">عقارات</span>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">أفضل استثمار في التقنية قمنا به. العائد على الاستثمار تحقّق خلال الشهر الأول. أنصح كل صاحب عمل في السعودية بالتواصل مع انسياب الأعمال.</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:linear-gradient(135deg,#f43f5e,#7c3aed)">ع</div>
+            <div><div class="t-name">عبدالله السعيد</div><div class="t-role">صاحب صيدلية — حائل</div></div>
+            <span class="t-badge">صيدلية</span>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- أزرار التحكم -->
+  <div style="display:flex;justify-content:center;gap:12px;margin-top:28px">
+    <button class="marquee-btn" id="marqueePrev" aria-label="السابق">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9,18 15,12 9,6"/></svg>
+    </button>
+    <button class="marquee-btn" id="marqueeNext" aria-label="التالي">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15,18 9,12 15,6"/></svg>
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="testimonials-summary reveal">
+      <div class="ts-item"><div class="ts-num">4.9</div><div style="color:#f59e0b;font-size:0.9rem;margin:4px 0">★★★★★</div><div class="ts-label">متوسط التقييم</div></div>
+      <div class="ts-divider"></div>
+      <div class="ts-item"><div class="ts-num">+30</div><div class="ts-label">عميل راضٍ</div></div>
+      <div class="ts-divider"></div>
+      <div class="ts-item"><div class="ts-num">100%</div><div class="ts-label">معدّل الاحتفاظ</div></div>
+      <div class="ts-divider"></div>
+      <div class="ts-item"><div class="ts-num">+96%</div><div class="ts-label">يوصون بالخدمة</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI CALCULATOR -->
+
+
+<section class="roi-section reveal">
+  <div class="container">
+    <div class="roi-header">
+      <div class="section-eyebrow">💰 احسب عائدك</div>
+      <h2>كم ستوفّر مع وكيل ذكي؟</h2>
+      <p>حرّك المؤشّرات وشاهد أرقامك الحقيقيّة تتغيّر فوريًا</p>
+    </div>
+
+    <div class="roi-calculator">
+      <div class="roi-grid">
+        <!-- المدخلات -->
+        <div class="roi-inputs">
+          <h3>🔧 بيانات عملك</h3>
+
+          <div class="roi-field">
+            <label>عدد موظفي خدمة العملاء / الاستقبال</label>
+            <div class="field-row">
+              <input type="range" id="empCount" min="1" max="10" value="2" step="1">
+              <span class="field-val"><span id="empCountVal">2</span> موظف</span>
+            </div>
+          </div>
+
+          <div class="roi-field">
+            <label>متوسط الراتب الشهري لكل موظف</label>
+            <div class="field-row">
+              <input type="range" id="empSalary" min="3000" max="15000" value="6000" step="500">
+              <span class="field-val"><span id="empSalaryVal">6,000</span> ر.س</span>
+            </div>
+          </div>
+
+          <div class="roi-field">
+            <label>نسبة المهام التي يمكن أتمتتها</label>
+            <div class="field-row">
+              <input type="range" id="autoRate" min="40" max="90" value="70" step="5">
+              <span class="field-val"><span id="autoRateVal">70</span>%</span>
+            </div>
+          </div>
+
+          <div class="roi-field">
+            <label>عدد الرسائل / استفسارات شهريًا</label>
+            <div class="field-row">
+              <input type="range" id="msgCount" min="100" max="5000" value="500" step="100">
+              <span class="field-val"><span id="msgCountVal">500</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- النتائج -->
+        <div class="roi-results">
+          <h3>📊 نتائجك المتوقّعة</h3>
+
+          <div class="roi-result-card">
+            <div class="roi-result-label">تكلفتك الحاليّة شهريًا</div>
+            <div class="roi-result-val" id="currentCost">12,000 ر.س</div>
+            <div class="roi-result-sub">راتب + تأمينات + بدلات</div>
+          </div>
+
+          <div class="roi-result-card">
+            <div class="roi-result-label">تكلفة الوكيل الذكي شهريًا</div>
+            <div class="roi-result-val" id="agentCost">~400 ر.س</div>
+            <div class="roi-result-sub">تشغيل + صيانة + دعم</div>
+          </div>
+
+          <div class="roi-result-card highlight">
+            <div class="roi-result-label">💰 توفيرك الشهري المتوقّع</div>
+            <div class="roi-result-val" id="monthlySaving">8,000 ر.س</div>
+            <div class="roi-result-sub" id="yearlySaving">= 96,000 ر.س سنويًا</div>
+          </div>
+
+          <div class="roi-result-card">
+            <div class="roi-result-label">⚡ رسائل تُجاب تلقائيًا</div>
+            <div class="roi-result-val" id="autoMsgs">350 رسالة</div>
+            <div class="roi-result-sub">شهريًا بدون تدخّل بشري</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="roi-cta">
+        <a href="https://wa.me/966532544447?text=أريد%20حساب%20العائد%20لعملي%20بالتفصيل" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.3A10 10 0 1012 2z"/></svg>
+          احصل على حساب دقيق لعملك
+        </a>
+      </div>
+      <p class="roi-disclaimer">* الأرقام تقديريّة بناءً على متوسطات السوق السعودي. الحساب الدقيق يتطلّب تقييم احتياجات عملك.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="final-box reveal">
+      <h2 class="final-title">احصل على الدليل التطبيقي مجانًا في بريدك.</h2>
+      <p class="final-desc">دليل تعليمي تطبيقي مكوّن من سبعة أجزاء — يصلك على بريدك خطوة بخطوة.</p>
+      <form class="newsletter-form" action="https://formspree.io/f/mykvkore" method="POST">
+        <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+        <input type="hidden" name="_subject" value="اشتراك جديد في الدليل التطبيقي">
+        <input type="hidden" name="source" value="موقع انسياب الأعمال - النشرة">
+        <button type="submit">احصل على الدليل</button>
+      </form>
+      <p class="newsletter-note">نحترم خصوصيّتك ولا نُرسل بريدًا عشوائيًا.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP FLOATING -->
+
+<!-- CHAT WIDGET -->
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-header-avatar">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="4" y="6" width="16" height="14" rx="4"/><circle cx="9" cy="12" r="1.3" fill="#fff"/><circle cx="15" cy="12" r="1.3" fill="#fff"/><path d="M9 16h6M12 2v4"/></svg>
+    </div>
+    <div class="chat-header-info">
+      <h4>وكيل انسياب الذكي</h4>
+      <span>متصل الآن</span>
+    </div>
+    <button class="chat-close" id="chatClose" aria-label="إغلاق">&times;</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-footer">
+    <a href="contact.html">أو تواصل معنا مباشرة عبر صفحة التواصل</a>
+  </div>
+</div>
+
+
+<a href="https://wa.me/966532544447" class="wa-float" aria-label="واتساب" target="_blank">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">
+            <svg viewBox="0 0 48 48" fill="none">
+              <defs>
+                <linearGradient id="flogoBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e2a4a"/><stop offset="1" stop-color="#0f1729"/></linearGradient>
+                <linearGradient id="flogoLine" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#c89548"/><stop offset="0.5" stop-color="#f43f5e"/><stop offset="1" stop-color="#c89548"/></linearGradient>
+              </defs>
+              <rect x="0" y="0" width="48" height="48" rx="14" fill="url(#flogoBg)"/>
+              <path d="M11 30 Q22 14, 24 24 T37 18" stroke="url(#flogoLine)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+              <path d="M11 34 Q22 20, 24 28 T37 22" stroke="#c89548" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.45"/>
+              <circle cx="11" cy="30" r="2.8" fill="#c89548"/>
+              <circle cx="37" cy="18" r="2.8" fill="#f43f5e"/>
+            </svg>
+          </div>
+          <span class="brand-name">انسياب <span>الأعمال</span></span>
+        </a>
+        <p>نبني وكلاء ذكاء اصطناعي وأنظمة أتمتة تُحرّر فريقك من المهامّ التكراريّة، وتجعل عملك ينساب تلقائيًا على مدار الساعة.</p>
+      </div>
+      <div class="footer-col">
+        <h4>الموقع</h4>
+        <ul><li><a href="index.html">الرئيسية</a></li><li><a href="services.html">الخدمات</a></li><li><a href="guide.html">الدليل</a></li><li><a href="blog.html">المدوّنة</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>الشركة</h4>
+        <ul><li><a href="about.html">من نحن</a></li><li><a href="contact.html">اتصل بنا</a></li><li><a href="#">سياسة الخصوصية</a></li><li><a href="#">الشروط والأحكام</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل مباشر</h4>
+        <ul><li><a href="https://wa.me/966532544447" target="_blank">واتساب: 0532544447</a></li><li><a href="mailto:aldubayan.developer@gmail.com">aldubayan.developer@gmail.com</a></li><li><a href="#">القصيم — المملكة العربيّة السعوديّة</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 انسياب الأعمال. جميع الحقوق محفوظة.</div>
+      <div class="socials">
+        <a href="#" aria-label="تويتر"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="#" aria-label="لنكدإن"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="#" aria-label="انستقرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ROTATING WORDS in hero
+  const words = ['موظفًا رقميًا', 'وكيلًا ذكيًا', 'مساعدًا آليًا', 'موظفًا لا ينام'];
+  let wIdx = 0;
+  const rotator = document.getElementById('rotator');
+  function typeWord(targetWord) {
+    let i = 0;
+    rotator.textContent = '';
+    const interval = setInterval(() => {
+      rotator.textContent = targetWord.slice(0, ++i);
+      if (i >= targetWord.length) {
+        clearInterval(interval);
+        setTimeout(() => {
+          const erase = setInterval(() => {
+            const cur = rotator.textContent;
+            rotator.textContent = cur.slice(0, -1);
+            if (rotator.textContent === '') {
+              clearInterval(erase);
+              wIdx = (wIdx + 1) % words.length;
+              setTimeout(() => typeWord(words[wIdx]), 200);
+            }
+          }, 50);
+        }, 2200);
+      }
+    }, 80);
+  }
+  typeWord(words[0]);
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+
+
+  // ===== AI ROBOT — floating + scroll-reactive =====
+  const robot = document.getElementById('aiRobot');
+  const bubble = document.getElementById('robotBubble');
+
+  if (robot) {
+    // رسائل الفقاعة
+    const msgs = [
+      'اضغط وابدأ المحادثة! 👋',
+      'وكيلك يعمل 24/7 ⚡',
+      'جرّبني — أنا ذكاء اصطناعي 🤖',
+      'استشارة مجانية — اضغط هنا ✨'
+    ];
+    let mi = 0;
+    if (bubble) {
+      bubble.textContent = msgs[0];
+      bubble.style.opacity = '1';
+      setInterval(() => {
+        mi = (mi + 1) % msgs.length;
+        bubble.style.opacity = '0';
+        setTimeout(() => {
+          bubble.textContent = msgs[mi];
+          bubble.style.opacity = '1';
+        }, 350);
+      }, 5000);
+    }
+
+    // ===== حركة مع التمرير =====
+    let lastScroll = 0;
+    let scrollVel = 0;
+    let tilt = 0;
+    let floatY = 0;
+    let floatDir = 1;
+    let floatT = 0;
+    let isJumping = false;
+    let rafId;
+
+    function robotLoop(ts) {
+      // طفو ناعم دائم
+      floatT += 0.018;
+      floatY = Math.sin(floatT) * 8;
+
+      // انحراف حسب سرعة التمرير
+      const targetTilt = Math.max(-18, Math.min(18, scrollVel * 2));
+      tilt += (targetTilt - tilt) * 0.12;
+
+      // تمدّد / ضغط حسب اتجاه الحركة
+      const stretch = 1 + Math.abs(scrollVel) * 0.008;
+      const squash  = 1 - Math.abs(scrollVel) * 0.004;
+
+      if (!isJumping) {
+        robot.style.transform =
+          `translateY(${floatY}px) rotate(${tilt}deg) scaleX(${squash.toFixed(3)}) scaleY(${stretch.toFixed(3)})`;
+      }
+
+      // تضاؤل السرعة
+      scrollVel *= 0.88;
+
+      // الفقاعة تتبع الروبوت
+      if (bubble) {
+        const r = robot.getBoundingClientRect();
+        bubble.style.left = (r.right + 14) + 'px';
+        bubble.style.top  = (r.top + 10) + 'px';
+        bubble.style.bottom = 'auto';
+      }
+
+      rafId = requestAnimationFrame(robotLoop);
+    }
+    rafId = requestAnimationFrame(robotLoop);
+
+    // رصد التمرير
+    let prevScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      const cur = window.scrollY;
+      scrollVel = cur - prevScrollY;
+      prevScrollY = cur;
+    }, { passive: true });
+
+    // نقرة — قفزة مرحة + فتح الشات
+    robot.addEventListener('click', () => {
+      if (isJumping) return;
+      isJumping = true;
+      let t = 0;
+      const jump = setInterval(() => {
+        t += 0.18;
+        const jumpY = floatY - Math.sin(t) * 28;
+        const rot   = Math.sin(t * 1.5) * 15;
+        const sc    = 1 + Math.sin(t) * 0.12;
+        robot.style.transform = `translateY(${jumpY}px) rotate(${rot}deg) scale(${sc})`;
+        if (t >= Math.PI) {
+          clearInterval(jump);
+          isJumping = false;
+          openChat();
+        }
+      }, 20);
+    });
+
+    // تأثير hover — توقّف + تكبير
+    robot.addEventListener('mouseenter', () => {
+      scrollVel = 0;
+    });
+  }
+
+
+  // ===== CHAT WIDGET ENGINE =====
+  const chatWindow = document.getElementById('chatWindow');
+  const chatBody = document.getElementById('chatBody');
+  const chatClose = document.getElementById('chatClose');
+  const WA_LINK = 'https://wa.me/966532544447';
+
+  const flow = {
+    start: {
+      msg: 'أهلًا بك في انسياب الأعمال! 👋 أنا وكيلك الذكي. كيف أقدر أساعدك اليوم؟',
+      options: [
+        { text: '🏥 عندي عيادة وأبغى أتمتة', next: 'clinic' },
+        { text: '🏪 عندي نشاط تجاري آخر', next: 'business' },
+        { text: '❓ أبغى أفهم الخدمة أكثر', next: 'explain' },
+        { text: '💰 كم التكلفة؟', next: 'price' }
+      ]
+    },
+    clinic: {
+      msg: 'ممتاز! الوكيل الذكي للعيادات يرد على المرضى، يحجز المواعيد، ويرسل التذكيرات تلقائيًا — 24/7. وش أهم تحدٍّ يواجه عيادتك؟',
+      options: [
+        { text: '📞 استفسارات كثيرة بعد الدوام', next: 'lead' },
+        { text: '📅 مرضى يغيبون عن مواعيدهم', next: 'lead' },
+        { text: '⏰ السكرتارية مشغولة بالحجوزات', next: 'lead' }
+      ]
+    },
+    business: {
+      msg: 'رائع! نبني وكلاء أتمتة لأي نشاط — متاجر، مكاتب، مطاعم. الوكيل يستقبل العملاء ويرد عليهم ويأخذ الطلبات. تبغى نناقش احتياجك بالتفصيل؟',
+      options: [
+        { text: '✅ نعم، أبغى أتواصل', next: 'lead' },
+        { text: '📖 أبغى أشوف أمثلة أولًا', next: 'examples' }
+      ]
+    },
+    explain: {
+      msg: 'باختصار: نبني "موظفًا رقميًا" يعمل بلا توقّف — يرد على عملائك، يدير طلباتك، ويربط أنظمتك. بتكلفة جزء بسيط من راتب موظف واحد. تحب تعرف أكثر؟',
+      options: [
+        { text: '🔧 كيف يعمل بالضبط؟', next: 'how' },
+        { text: '💬 أبغى استشارة مجانية', next: 'lead' }
+      ]
+    },
+    how: {
+      msg: 'نصمّم الوكيل خصيصًا لنشاطك، نربطه بالواتساب وأنظمتك، وندرّبه على أسئلة عملائك. خلال أيام يصير جاهزًا للعمل. الاستشارة المجانية تحدد التفاصيل بدقة.',
+      options: [
+        { text: '📲 ابدأ الاستشارة المجانية', next: 'lead' }
+      ]
+    },
+    price: {
+      msg: 'التكلفة تعتمد على حجم احتياجك ونوع الوكيل — لكنها دائمًا أقل بكثير من راتب موظف. نحدد لك السعر الدقيق في استشارة مجانية بدون أي التزام.',
+      options: [
+        { text: '📲 أبغى الاستشارة المجانية', next: 'lead' },
+        { text: '📖 شوف الخدمات', next: 'examples' }
+      ]
+    },
+    examples: {
+      msg: 'تقدر تشوف خدماتنا الستة والأدوات اللي نستخدمها في صفحة الخدمات. وفيها تفاصيل القطاعات اللي نخدمها.',
+      options: [
+        { text: '🔗 افتح صفحة الخدمات', action: 'services' },
+        { text: '📲 أبغى استشارة مجانية', next: 'lead' }
+      ]
+    },
+    lead: {
+      msg: 'ممتاز! 🎉 أسرع طريقة نبدأ فيها: تواصل معنا مباشرة على الواتساب وبنرد عليك خلال وقت قصير ونحجز لك استشارتك المجانية.',
+      options: [],
+      cta: true
+    }
+  };
+
+  let chatStarted = false;
+
+  function addBotMsg(text, cb) {
+    const typing = document.createElement('div');
+    typing.className = 'chat-typing';
+    typing.innerHTML = '<span></span><span></span><span></span>';
+    chatBody.appendChild(typing);
+    chatBody.scrollTop = chatBody.scrollHeight;
+    setTimeout(() => {
+      typing.remove();
+      const m = document.createElement('div');
+      m.className = 'chat-msg bot';
+      m.textContent = text;
+      chatBody.appendChild(m);
+      chatBody.scrollTop = chatBody.scrollHeight;
+      if (cb) cb();
+    }, 900);
+  }
+
+  function addUserMsg(text) {
+    const m = document.createElement('div');
+    m.className = 'chat-msg user';
+    m.textContent = text;
+    chatBody.appendChild(m);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  let stepHistory = [];
+
+  function showStep(key, isBack) {
+    const step = flow[key];
+    if (!step) return;
+    if (!isBack && key !== 'start') stepHistory.push(key);
+    addBotMsg(step.msg, () => {
+      const wrap = document.createElement('div');
+      wrap.className = 'chat-options';
+
+      // زر الرجوع إذا لم نكن في البداية
+      if (stepHistory.length > 1 || (key !== 'start' && !isBack)) {
+        const backBtn = document.createElement('button');
+        backBtn.className = 'chat-back-btn';
+        backBtn.innerHTML = '&#8592; رجوع';
+        backBtn.addEventListener('click', () => {
+          wrap.remove();
+          stepHistory.pop();
+          const prev = stepHistory.length ? stepHistory[stepHistory.length-1] : 'start';
+          if (prev !== 'start') stepHistory.pop();
+          chatBody.querySelectorAll('.chat-msg').forEach((m,i,a)=>{ if(i===a.length-1) m.remove(); });
+          showStep(prev, true);
+        });
+        wrap.appendChild(backBtn);
+      }
+
+      if (step.cta) {
+        const wa = document.createElement('a');
+        wa.className = 'chat-cta-btn';
+        wa.href = WA_LINK;
+        wa.target = '_blank';
+        wa.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.3A10 10 0 1012 2z"/></svg> تواصل عبر الواتساب الآن';
+        wrap.appendChild(wa);
+        chatBody.appendChild(wrap);
+        chatBody.scrollTop = chatBody.scrollHeight;
+        return;
+      }
+      if (step.options && step.options.length) {
+        step.options.forEach(opt => {
+          const b = document.createElement('button');
+          b.className = 'chat-option';
+          b.textContent = opt.text;
+          b.addEventListener('click', () => {
+            addUserMsg(opt.text);
+            wrap.remove();
+            if (opt.action === 'services') {
+              setTimeout(() => { window.location.href = 'services.html'; }, 600);
+            } else if (opt.next) {
+              showStep(opt.next);
+            }
+          });
+          wrap.appendChild(b);
+        });
+        chatBody.appendChild(wrap);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+    });
+  }
+
+  function openChat() {
+    chatWindow.classList.add('open');
+    if (!chatStarted) {
+      chatStarted = true;
+      setTimeout(() => showStep('start'), 400);
+    }
+  }
+  function closeChat() {
+    chatWindow.classList.remove('open');
+  }
+
+  if (chatClose) chatClose.addEventListener('click', closeChat);
+
+
+
+  // ===== مؤشّر تقدّم القراءة =====
+  const readingBar = document.getElementById('readingBar');
+  if (readingBar) {
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      readingBar.style.width = pct + '%';
+    }, { passive: true });
+  }
+
+  // ===== أنيميشن أرقام تصاعديّة =====
+  function animateCount(el, target, duration, suffix, prefix) {
+    const start = performance.now();
+    const isFloat = String(target).includes('.');
+    function update(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      // easeOutExpo
+      const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+      const val = isFloat
+        ? (ease * target).toFixed(1)
+        : Math.round(ease * target).toLocaleString('en-US');
+      el.textContent = (prefix||'') + val + (suffix||'');
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+
+  // أرقام trust stats في الـ Hero
+  const trustNums = document.querySelectorAll('.trust-stat');
+  const trustObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        trustObs.unobserve(e.target);
+        const accents = e.target.querySelectorAll('.accent');
+        accents.forEach(acc => {
+          const txt = acc.textContent.replace(/[^0-9.]/g,'');
+          const num = parseFloat(txt);
+          if (!isNaN(num) && num > 0) {
+            animateCount(acc, num, 1200, acc.textContent.replace(/[0-9.]/g,''), '');
+          }
+        });
+      }
+    });
+  }, { threshold: 0.5 });
+  trustNums.forEach(t => trustObs.observe(t));
+
+  // ===== حاسبة العائد =====
+  const roiInputs = {
+    empCount:  document.getElementById('empCount'),
+    empSalary: document.getElementById('empSalary'),
+    autoRate:  document.getElementById('autoRate'),
+    msgCount:  document.getElementById('msgCount'),
+  };
+  const roiVals = {
+    empCount:  document.getElementById('empCountVal'),
+    empSalary: document.getElementById('empSalaryVal'),
+    autoRate:  document.getElementById('autoRateVal'),
+    msgCount:  document.getElementById('msgCountVal'),
+  };
+  const roiOut = {
+    currentCost:  document.getElementById('currentCost'),
+    agentCost:    document.getElementById('agentCost'),
+    monthlySaving: document.getElementById('monthlySaving'),
+    yearlySaving:  document.getElementById('yearlySaving'),
+    autoMsgs:      document.getElementById('autoMsgs'),
+  };
+
+  function toAr(n) {
+    return Math.round(n).toLocaleString('en-US');
+  }
+
+  function calcROI() {
+    if (!roiInputs.empCount) return;
+    const emp    = parseInt(roiInputs.empCount.value);
+    const salary = parseInt(roiInputs.empSalary.value);
+    const rate   = parseInt(roiInputs.autoRate.value) / 100;
+    const msgs   = parseInt(roiInputs.msgCount.value);
+
+    // تكلفة حاليّة: راتب × موظفين × 1.25 (تأمينات وبدلات)
+    const currentCost = emp * salary * 1.25;
+    // تكلفة الوكيل: ثابتة ~400 + متغيّرة حسب الرسائل
+    const agentCost = 400 + Math.min(msgs * 0.1, 800);
+    // الوفر: نسبة الأتمتة من التكلفة الحاليّة ناقص تكلفة الوكيل
+    const saving = (currentCost * rate) - agentCost;
+    const autoMsgs = Math.round(msgs * rate);
+
+    roiVals.empCount.textContent  = emp;
+    roiVals.empSalary.textContent = toAr(salary);
+    roiVals.autoRate.textContent  = parseInt(roiInputs.autoRate.value);
+    roiVals.msgCount.textContent  = toAr(msgs);
+
+    // أنيميشن الأرقام
+    animateCountEl(roiOut.currentCost, currentCost, ' ر.س');
+    animateCountEl(roiOut.agentCost, agentCost, ' ر.س', '~');
+    animateCountEl(roiOut.monthlySaving, Math.max(saving,0), ' ر.س');
+    roiOut.yearlySaving.textContent = '= ' + toAr(Math.max(saving,0)*12) + ' ر.س سنويًا';
+    roiOut.autoMsgs.textContent = toAr(autoMsgs) + ' رسالة';
+  }
+
+  let roiAnimFrame;
+  function animateCountEl(el, target, suffix, prefix) {
+    if (!el) return;
+    const current = parseFloat((el.textContent||'0').replace(/[^0-9.]/g,'')) || 0;
+    const diff = target - current;
+    const steps = 20;
+    let step = 0;
+    function tick() {
+      step++;
+      const val = Math.round(current + (diff * step / steps));
+      el.textContent = (prefix||'') + toAr(val) + (suffix||'');
+      if (step < steps) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  // ربط الـ sliders
+  Object.values(roiInputs).forEach(inp => {
+    if (inp) inp.addEventListener('input', calcROI);
+  });
+
+  // تشغيل أوّلي عند دخول القسم
+  const roiSection = document.querySelector('.roi-section');
+  if (roiSection) {
+    const roiObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          calcROI();
+          roiObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    roiObs.observe(roiSection);
+  }
+
+
+
+  // ===== MARQUEE — infinite smooth with drag =====
+  const mInner = document.getElementById('marqueeInner');
+  if (mInner) {
+    // كرّر البطاقات 3 مرات لضمان الامتلاء الكامل
+    const orig = mInner.innerHTML;
+    mInner.innerHTML = orig + orig + orig;
+
+    const CARD_W  = 340 + 24; // عرض + gap
+    const TOTAL_W = 6 * CARD_W; // 6 بطاقات أصلية
+    let pos    = 0;
+    let speed  = 0.7;
+    let paused = false;
+    let raf;
+
+    // حركة auto
+    function tick() {
+      if (!paused && !isDragging) {
+        pos += speed;
+        if (pos >= TOTAL_W) pos -= TOTAL_W;
+        mInner.style.transform = `translateX(-${pos}px)`;
+      }
+      raf = requestAnimationFrame(tick);
+    }
+    raf = requestAnimationFrame(tick);
+
+    // hover pause
+    mInner.parentElement.addEventListener('mouseenter', () => paused = true);
+    mInner.parentElement.addEventListener('mouseleave', () => paused = false);
+
+    // ===== Drag to scroll =====
+    let isDragging = false, dragStartX = 0, posAtDrag = 0;
+
+    mInner.parentElement.addEventListener('mousedown', e => {
+      isDragging = true;
+      dragStartX = e.clientX;
+      posAtDrag  = pos;
+    });
+    window.addEventListener('mousemove', e => {
+      if (!isDragging) return;
+      const delta = dragStartX - e.clientX;
+      pos = posAtDrag + delta;
+      if (pos < 0) pos += TOTAL_W;
+      if (pos >= TOTAL_W) pos -= TOTAL_W;
+      mInner.style.transform = `translateX(-${pos}px)`;
+    });
+    window.addEventListener('mouseup', () => { isDragging = false; });
+
+    // touch support
+    mInner.parentElement.addEventListener('touchstart', e => {
+      isDragging = true;
+      dragStartX = e.touches[0].clientX;
+      posAtDrag  = pos;
+    }, {passive:true});
+    window.addEventListener('touchmove', e => {
+      if (!isDragging) return;
+      const delta = dragStartX - e.touches[0].clientX;
+      pos = posAtDrag + delta;
+      if (pos < 0) pos += TOTAL_W;
+      if (pos >= TOTAL_W) pos -= TOTAL_W;
+      mInner.style.transform = `translateX(-${pos}px)`;
+    }, {passive:true});
+    window.addEventListener('touchend', () => { isDragging = false; });
+
+    // أزرار التنقل
+    const btnNext = document.getElementById('marqueeNext');
+    const btnPrev = document.getElementById('marqueePrev');
+    if (btnNext) btnNext.addEventListener('click', () => {
+      pos += CARD_W;
+      if (pos >= TOTAL_W) pos -= TOTAL_W;
+    });
+    if (btnPrev) btnPrev.addEventListener('click', () => {
+      pos -= CARD_W;
+      if (pos < 0) pos += TOTAL_W;
+    });
+  }
+
+  // ===== CURSOR GLOW =====
+  const glow = document.getElementById('cursorGlow');
+  if (glow) {
+    document.addEventListener('mousemove', (e) => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top  = e.clientY + 'px';
+    });
+  }
+
+  // ===== FLOATING PARTICLES =====
+  const pbg = document.getElementById('particlesBg');
+  if (pbg) {
+    const colors = ['#c89548','#f43f5e','#7c3aed','#14b8a6'];
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = Math.random() * 10 + 4;
+      p.style.cssText = `
+        width:${size}px; height:${size}px;
+        left:${Math.random()*100}%;
+        background:${colors[Math.floor(Math.random()*colors.length)]};
+        animation-duration:${Math.random()*15+10}s;
+        animation-delay:${Math.random()*10}s;
+      `;
+      pbg.appendChild(p);
+    }
+  }
+
+  // ===== COUNTER UP on scroll =====
+  const statCards = document.querySelectorAll('.stat-card');
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        counterObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  statCards.forEach(c => counterObs.observe(c));
+
+  // ===== TOOL BADGES stagger reveal =====
+  document.querySelectorAll('.tool-badge').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = `opacity 0.5s ${i*0.08}s ease, transform 0.5s ${i*0.08}s ease`;
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    obs.observe(el);
+  });
+
+
+  // Mobile menu toggle
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-open");
+      menuToggle.classList.toggle("active");
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("nav-open");
+        menuToggle.classList.remove("active");
+      });
+    });
+  }
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal, .reveal-scale').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
